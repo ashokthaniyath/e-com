@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="authApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+   
+
+        <!-- Navbar -->
+        <header>
+            <!-- Nav Container -->
+    
+            <div class="nav conainer">
+    
+                <i class='bx bx-menu' id="menu-icon"></i>
+    
+                <a href="#" class="logo"> Auto<span>Nation</span> </a>
+                <!-- Nav list -->
+    
+                <ul class="navbar">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="index.html">Cars</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Parts</a></li>
+                    <li><a href="index.html">Our Blog</a></li>
+                    <li><a href="form.html" class="active"><span>Login </span>/ Register</a></li>
+                </ul>
+               <!-- Search ICon -->
+
+            <i class='bx bx-search' id="search-icon" ></i>
+
+            <div class="search-box  container">
+
+            <input type="search" name="" id="" placeholder="search here...">
+    
+    
+            </div>
+        </header>
+    <div class="container">
+        <div ng-controller="AuthController" class="auth-box">
+            <div ng-show="showLogin">
+                <h4><span>Login</span></h4><br/>
+                <form ng-submit="login()">
+                   
+                    <label>User Name:</label><br>
+                    <input type="password" ng-model="" required>
+                    <label>Password:</label><br>
+                    <input type="password" ng-model="loginData.password" required>
+                    
+                    <button type="submit" style="background-color: rgb(56, 56, 125); 
+                    border: none;  
+                    color: white; 
+                    padding: 15px 15px;  
+                    text-align: center; 
+                    text-decoration: none;
+                    display: inline-block;  
+                    font-size: 16px;  
+                    margin: 2px 2px;  
+                    cursor: pointer; ">Login</button>
+                </form>
+                <p>New User? <a href="#" ng-click="toggleForm()">Register here</a></p>
+            </div>
+            <div ng-show="!showLogin">
+                <h2>Register</h2><br/>
+                <form ng-submit="register()">
+                    <label>Full Name:</label><br>
+                    <input type="text" ng-model="" required>
+                    <label>username:</label><br>
+                    <input type="password" ng-model="" required>
+                    <label>Email:</label>
+                    <input type="email" ng-model="registerData.email" required> <br> <br>
+                    <label>Password:</label>
+                    
+                    <input type="password" ng-model="registerData.password" required> 
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" ng-click="toggleForm()">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer style="background-color: rgb(56, 56, 125); color: white; padding: 20px 0;">
+    <div style="text-align: center;">
+        <!-- Social Media Icons -->
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram-square"></i></a>
+        <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <!-- Contact Information -->
+        <p>Email: Autonation@gamil.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Main St, City, Country</p>
+    </div>
+</footer>
+</html>

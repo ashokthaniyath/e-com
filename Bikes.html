@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car Website</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+
+<body style="background-color: white;">
+    <header>
+        <div class="testimg">
+        <!-- <h1 style="text-align: center;";>Car Dealership</h1> -->
+        <img src="AutoNation.png" style="width: 150px;">
+    </div>
+        
+    </header>
+    <div class="topnav">
+        <a  href="project.html">Home</a>
+        <a class="active" href="Bikes.html">Bikes</a>
+        <a href="Car.html">Car</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a  href="Events&News.html">News & Events</a>
+        <input type="text" placeholder="Search..">
+      </div>
+
+      <form>
+        <h4>Select your bike</h4>
+        <select  name="Bikes" id="Bikes">
+            
+            <option value="Used">Used</option>
+            <option value="New">New</option>
+        </select>
+      </form>
+
+    <section class="featured-bikes">
+        <fieldset style="width: 200px; display: inline;" onclick="">
+            <div class="bike-listing">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtr8hF4HkxfuM_WIsBseSnyeM1tcLkRzY3sw&s" style="width: 300px;">
+              <h3>2011 Suzuki Hayabusa</h3>
+              <p class="price">11,00,000/-</p>
+          </div>
+        </fieldset>
+
+          <fieldset style="width: 200px; display: inline;" onclick="">
+            <div class="bike-listing">
+              <img src="10r.jpg" style="width: 200px;">
+              <h3>2019 Kawasaki Zx10r</h3>
+              <p class="price">18,00,000/-</p>
+          </div>
+          </fieldset>
+          <fieldset style="width: 200px; display: inline;" onclick="">
+            <div class="bike-listing">
+              <img src="https://scontent.fbom2-1.fna.fbcdn.net/v/t45.5328-4/411464208_6828082757317989_2905295163967399862_n.jpg?stp=c0.67.403.403a_dst-jpg_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=sSUGCVzjC8kAX9WTQFl&_nc_ht=scontent.fbom2-1.fna&oh=00_AfCZaDfWB_MYdnTxTJLbDVf4Okd3WWVD01eTgG8UktedUA&oe=65DE2EED" style="width: 270px;">
+              <h3>2017 Honda Cbr1000rr</h3>
+              <p class="price">9,00,000/-</p>
+          </div>
+          </fieldset>
+        <!-- Display featured cars here -->
+    </section>
+
+    <section class="car-listings">
+        <!-- Display all available cars with details -->
+    </section>
+
+    
+
+    <script src="app.js"></script>
+</body>
+<footer>
+    <p>© All rights reserved</p>
+</footer>
+</html>
